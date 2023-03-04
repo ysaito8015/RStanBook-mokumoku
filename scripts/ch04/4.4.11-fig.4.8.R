@@ -186,7 +186,7 @@ p <-
   ) +
   geom_line(
     aes(x = X, y = `50%`),
-    size = 1
+    linewidth = 1
   ) +
   geom_point(
     data = d,

@@ -1,6 +1,6 @@
 source("environments.R")
 .libPaths(libDir)
-figDir <- file.path(outDir, "ch04")
+figDir <- file.path(outDir, "figures", "ch04")
 if (!dir.exists(figDir)) {
   dir.create(figDir)
 }
