@@ -10,6 +10,10 @@ dataDir <- file.path(dataDir, "ch04")
 if (!dir.exists(dataDir)) {
   dir.create(dataDir)
 }
+modelDir <- file.path(modelDir, "ch04")
+if (!dir.exists(modelDir)) {
+  dir.create(modelDir)
+}
 .libPaths(libDir)
 
 # load packages

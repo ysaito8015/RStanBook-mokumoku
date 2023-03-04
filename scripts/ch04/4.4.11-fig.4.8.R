@@ -10,6 +10,10 @@ dataDir <- file.path(dataDir, "ch04")
 if (!dir.exists(dataDir)) {
   dir.create(dataDir)
 }
+modelDir <- file.path(modelDir, "ch04")
+if (!dir.exists(modelDir)) {
+  dir.create(modelDir)
+}
 .libPaths(libDir)
 
 # load packages
@@ -50,7 +54,7 @@ y_base_mcmc <-
 # at specific age X_new[i]
 # columns : age from 23 to 60
 # rows : new random values from 1 to 4000
-y_mcmc <-
+y_pred_new <-
   mat %>%
   #as.data.frame()
   tibble::as_tibble()
@@ -115,7 +119,7 @@ p <-
   ) +
   geom_line(
     aes(x = X, y = `50%`),
-    size = 1
+    linewidth = 1
   ) +
   geom_point(
     data = d,

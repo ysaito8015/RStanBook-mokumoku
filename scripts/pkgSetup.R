@@ -1,10 +1,14 @@
 pkgs <-
   c(
     "RcppParallel",
+    "RcppEigen",
+    "gridExtra",
+    "V8",
+    "inline",
+    "loo",
     "tidyverse",
     "bayesplot",
     "ggmcmc",
-    "patchwork",
     "mrgsolve",
     "pacman",
     "rio"
@@ -58,3 +62,5 @@ install.packages(
   dependencies = c("Depends", "Imports", "LinkingTo"),
   INSTALL_opts = "--no-multiarch"
 )
+
+devtools::install_github("thomasp85/patchwork")
