@@ -1,9 +1,9 @@
 scriptDir <- getwd()  ## You may need to mod this to be in the top level of scriptDir
 projectDir <- dirname(scriptDir)
 dataDir <- file.path(projectDir, "data")
-stanDir <- file.path(projectDir, "models")
-if (!dir.exists(stanDir)) {
-    dir.create(stanDir)
+modelDir <- file.path(projectDir, "models")
+if (!dir.exists(modelDir)) {
+    dir.create(modelDir)
 }
 pkgDir <- file.path(projectDir, "pkg")
 if (!dir.exists(pkgDir)) {
