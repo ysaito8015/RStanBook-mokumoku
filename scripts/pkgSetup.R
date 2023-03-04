@@ -23,7 +23,6 @@ stan_pkgs <-
 source("./environments.R")
 .libPaths(libDir)
 
-
 install.packages(
   c("devtools", "BH", "remotes"),
   lib = libDir,
